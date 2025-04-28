@@ -2,16 +2,16 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Button, Card, CardContent, Typography, TextField, Box, Container } from '@mui/material';
 
 const levels = [
-  { speed: 1 }, // Level 1: Normal speed
-  { speed: 2 }, // Level 2: Increased speed fadingArrow   //upsideDown,
-  { speed: 2,fadingTarget: true },
-  { speed: 2,movingTarget: true},
+  { speed: 1,upsideDown:false }, // Level 1: Normal speed
+  { speed: 2,upsideDown:false }, // Level 2: Increased speed fadingArrow   //upsideDown,
+  { speed: 2,fadingTarget: true,upsideDown:false },
+  { speed: 2,movingTarget: true,upsideDown:false},
   {speed:3,upsideDown:true},
   { speed: 3, movingTarget: true ,upsideDown:false },
-  {speed:3, movingTarget:true, fadingTarget:true},
-  {speed:2,fadingArrow:true}, 
-  {speed:3,fadingArrow:true,movingTarget:true},
-  { speed: 2, fadingArrow: true ,movingTarget:true,fadingTarget:true}, // Level 10: Insane speed
+  {speed:3, movingTarget:true, fadingTarget:true,upsideDown:false},
+  {speed:2,fadingArrow:true,upsideDown:false}, 
+  {speed:3,fadingArrow:true,movingTarget:true,upsideDown:false},
+  { speed: 2, fadingArrow: true ,movingTarget:true,fadingTarget:true,upsideDown:false}, // Level 10: Insane speed
 ];
 
 const MainScreen = ({ onStart }) => {
