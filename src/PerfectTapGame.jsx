@@ -78,7 +78,7 @@ const GameScreen = ({ onGameOver }) => {
     };
     requestRef.current = requestAnimationFrame(rotate);
     return () => cancelAnimationFrame(requestRef.current);
-  }, [currentLevel.speed]);
+  }, [currentLevel.upsideDown]);
 
   useEffect(() => {
     if (currentLevel.fadingTarget) {
