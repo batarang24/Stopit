@@ -7,11 +7,11 @@ const levels = [
   { speed: 2,fadingTarget: true },
   { speed: 2,movingTarget: true},
   {speed:3,upsideDown:true},
-  { speed: 3, movingTarget: true },
-  {speed:2, movingTarget:true, fadingTarget:true},
+  { speed: 3, movingTarget: true ,upsideDown:false },
+  {speed:3, movingTarget:true, fadingTarget:true},
   {speed:2,fadingArrow:true}, 
   {speed:3,fadingArrow:true,movingTarget:true},
-  { speed: 3, fadingArrow: true ,movingTarget:true,fadingTarget:true}, // Level 10: Insane speed
+  { speed: 2, fadingArrow: true ,movingTarget:true,fadingTarget:true}, // Level 10: Insane speed
 ];
 
 const MainScreen = ({ onStart }) => {
