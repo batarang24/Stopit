@@ -144,7 +144,8 @@ const GameScreen = ({ onGameOver }) => {
           <>
             <Typography variant="h5">⏱️ Time Left: {timeLeft}s</Typography>
             <Typography variant="h6">🚀 Level: {level}</Typography>
-            <svg width="400" height="400" onClick={handleClick} style={{ backgroundColor: '#f3f3f3', borderRadius: '50%', marginBottom: 20, cursor: 'pointer' }}>
+          
+            <svg width="400" height="400" onClick={handleClick} style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none',backgroundColor: '#f3f3f3', borderRadius: '50%', marginBottom: 20, cursor: 'pointer' }}>
               <circle cx={center} cy={center} r={radius} stroke="black" strokeWidth="2" fill="none" />
               {
                 (!currentLevel.fadingArrow || fadeArrow) &&(
