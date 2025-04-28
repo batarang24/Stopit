@@ -70,7 +70,7 @@ const GameScreen = ({ onGameOver }) => {
   useEffect(() => {
     const rotate = () => {
       setAngle(prev =>{
-        const delta=currentLevel.upsideDown? -currentLevel.speed:currentLevel.speed;
+        const delta= currentLevel.upsideDown ? -currentLevel.speed :currentLevel.speed;
         return(prev + delta+360) % 360
       
       });
